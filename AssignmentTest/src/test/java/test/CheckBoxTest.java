@@ -22,11 +22,11 @@ public class CheckBoxTest  extends TestBaseAssignment{
 	
 	@Test
 	@Parameters({"CheckBoxesUrl"})
-	public void CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(String CheckBoxesUrl) throws InterruptedException{
+	public void CheckBoxFirstIsCheckedSecondIsUnCheckedTestCase(String CheckBoxesUrl) throws   InterruptedException {
 		this.helper.getDriver().get(CheckBoxesUrl);
 		this.helper.maximizeWindows();
 		
-		CheckBoxesPage cp = new CheckBoxesPage(this.helper.getDriver());
+		CheckBoxesPage cp = new CheckBoxesPage(this.helper.getDriver() );
 		
 		cp.CheckCheckbox("CheckBox 1");
 		cp.CheckBoxFirstIsSelected();
